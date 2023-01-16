@@ -1,5 +1,5 @@
 ## 由于原作者，觉得这个项目用途的确不大，已停更！
-### 重构版由：小周❃™制作，项目地址：https://github.com/xzdns/
+### 重构版由：小周❃™制作，项目地址：https://github.com/zhoudedi/xzdns/
 
 # 小周二级域名分发系统 （xzdns v3.1.1）
 
