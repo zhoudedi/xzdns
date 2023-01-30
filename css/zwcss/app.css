@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+body{
+    background-color: rgba(237,241,244,255);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+}
+header.active{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+header .logo{
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+}
+header .logo span{
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #666;
+}
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: #3f51b5;
+}
+#menu-bar{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    border: 0.1rem solid #333;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    display: none;
+}
+
+section{
+    padding: 2rem 5%;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 70vh;
+    align-items: center;
+    background: url(../csjs/home-bg.png) no-repeat;
+    background-size: cover;
+}
+.home .content{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home .content h3{
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    color: #333;
+}
+.home .content img{
+    height: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+.home .content div{
+    margin-top: 3rem;
+}
+.home .content div a{
+    color: #fff;
+    background-color: #c72c28;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+.home .content div a:nth-child(2){
+    background-color: #001737;
+    margin-left: 20px;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem;
+    color: #666;
+}
+.function .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.function .box-container .box{
+    margin-top: 1.5rem;
+    flex: 1 1 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    margin-bottom: 2.5rem;
+}
+.function .box-container .box img{
+    margin: 1.5rem 0;
+    height: 80px;
+    width: 80px;
+}
+.function .box-container .box h4{
+    font-size: 2rem;
+    color: #333;
+}
+.function .box-container .box p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+.function .box-container .box:hover{
+    margin-top: 0;
+}
+
+.screemshot{
+    overflow: hidden;
+}
+.screemshot .swiper-container {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .screemshot .swiper-slide {
+    width: 30rem;
+    height: 55rem;
+  }
+  
+  .screemshot .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+.salt{
+    display: flex;
+    justify-content: center;
+    background: url(../csjs/footer-agency.png) no-repeat;
+    background-size: cover;
+}
+.salt .box{
+    width: 50rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 6rem 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.salt .box .title{
+    padding: 1rem 1.2rem;
+    border-radius: 5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #001737;
+    margin-bottom: 1rem;
+}
+.salt .box div{
+    display: flex;
+    width: 80%;
+    margin: 2rem 0;
+}
+.salt .box div span{
+    flex: 1 1 auto;
+    padding: 1.3rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px 0 0px 5px;
+    border-top: 0.1rem solid #333;
+    border-left: 0.1rem solid #333;
+    border-bottom: 0.1rem solid #333;
+}
+.salt .box div a{
+    font-size: 1.6rem;
+    padding: 1.3rem 1.5rem;
+    background-color: #c72c28;
+    color: #fff;
+    border-radius: 0 5px 5px 0px;
+}
+.salt .box p{
+    font-size: 1.3rem;
+    color: #333;
+}
+.salt .box p i{
+    padding-right: 5px;
+}
+.footer{
+    padding: 0;
+    display: flex;
+    height: 10rem;
+    background-color: rgba(227,233,245);
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-size: 1.5rem;
+    color: #333;
+}
+#scroll-top{
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: #c72c28;
+    opacity: 0;
+}
+#scroll-top.active{
+    opacity: 1;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:815px){
+    .home .image{
+        display: none;
+    }
+    .home{
+        min-height: 50vh;
+    }
+    .home .content img{
+        margin-top: 5rem;
+    }
+}
+@media(max-width:550px){
+    #menu-bar{
+        display: inline;
+    }
+    header .logo img{
+        height: 30px;
+        width: 30px;
+        border-radius: 8px;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: #e0e0e0;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        padding-bottom: 20px;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem 2rem;
+        padding: 1.5rem 1rem;
+        display: block;
+        border-radius: 8px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .home .content img{
+        height: 100px;
+        height: 100px;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+}
