@@ -26,8 +26,8 @@ if (mysqli_connect_errno($con))
     echo "连接失败: " . mysqli_connect_error();
 }
 
-//需要您数据库到账的数据表名和金额民和用户字段名
-$pricetable='xzdns_users';//数据库表名【默认不更改，如果你在安装时更改了数据库表名则需要更改】
+//数据库表名前缀
+$pricetable='zzdns_';//数据库表名前缀【默认不更改，如果你在安装时更改了数据库表名则需要更改】
 
 $pricename = 'point';//金额字段名【默认不更改】
 $priceusername='uid';//充值表对应的用户字段名【默认不更改】
